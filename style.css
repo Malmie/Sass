@@ -1,0 +1,240 @@
+.main-class, body h4, body h2, header a, .liczby {
+  text-transform: upperrcase; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font: 100% "Open-Sans", sans-serif; }
+
+.nav:before,
+.nav:after {
+  content: " ";
+  display: table; }
+
+.nav:after {
+  clear: both; }
+
+header {
+  background-color: #313234;
+  height: 50px; }
+  header .container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; }
+  header img {
+    padding: 10px 0; }
+  header ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+  header a {
+    line-height: 50px;
+    padding: 0 20px;
+    display: block;
+    color: #fff;
+    text-decoration: none; }
+    header a:hover {
+      background-color: #ccc; }
+  header li {
+    display: inline-block; }
+
+.hero {
+  width: 100%;
+  height: 250px;
+  background-image: url(https://images.pexels.com/photos/257949/pexels-photo-257949.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+  background-position: center;
+  background-size: cover; }
+  .hero .slogan {
+    background-color: rgba(0, 0, 0, 0.5);
+    float: right;
+    max-width: 800px;
+    margin: 70px 0;
+    padding: 0 10px;
+    color: white; }
+
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+[class*="col-"] {
+  float: left;
+  width: 100%;
+  padding: 12px; }
+
+.gallery [class*="col-"] {
+  padding: 2px; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+@media (max-width: 767px) {
+  .col-s-1 {
+    width: 8.33%; }
+
+  .col-s-2 {
+    width: 16.66%; }
+
+  .col-s-3 {
+    width: 25%; }
+
+  .col-s-4 {
+    width: 33.33%; }
+
+  .col-s-5 {
+    width: 41.66%; }
+
+  .col-s-6 {
+    width: 50%; }
+
+  .col-s-7 {
+    width: 58.33%; }
+
+  .col-s-8 {
+    width: 66.66%; }
+
+  .col-s-9 {
+    width: 75%; }
+
+  .col-s-10 {
+    width: 83.33%; }
+
+  .col-s-11 {
+    width: 91.66%; }
+
+  .col-s-12 {
+    width: 100%; } }
+section .container {
+  margin: 50px auto;
+  text-align: center; }
+
+.gallery img {
+  width: 100%;
+  display: block; }
+.gallery .layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  position: absolute; }
+.gallery .i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white; }
+.gallery i:first-child {
+  margin-right: 15px; }
+
+.row * {
+  position: relative; }
+  .row *:hover .layer {
+    opacity: 1;
+    z-index: 1; }
+
+.zespol img {
+  border-radius: 50%; }
+
+.obrazek {
+  background-color: grey; }
+  .obrazek .row {
+    color: white;
+    text-align: left; }
+  .obrazek .col-12 {
+    height: 40px; }
+  .obrazek img {
+    width: 100%;
+    border: 1px solid orange;
+    border-radius: 10%; }
+
+.liczby {
+  font-family: 'Skranji'; }
+  .liczby p {
+    color: blue; }
+
+footer {
+  background-color: #313234;
+  color: white;
+  padding: 10px; }
+  footer .stopka .email {
+    word-wrap: break-word; }
+  footer button {
+    background-color: blue;
+    border: none;
+    margin: 4px;
+    color: white;
+    height: 40px;
+    width: 40px;
+    font-size: 20px; }
+
+@media (max-width: 768px) {
+  p, h2 {
+    font-size: 15px; }
+
+  nav {
+    background-color: #313234; }
+
+  header img {
+    padding: 0 100px; }
+  header li {
+    padding: 0 100px; }
+  header ul {
+    float: none;
+    text-align: center; }
+
+  .hero {
+    margin-top: 130px; }
+    .hero .slogan {
+      width: 30%;
+      font-size: 10px; }
+
+  .gallery .layer {
+    opacity: 1;
+    width: auto;
+    height: 20%;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    position: absolute; }
+    .gallery .layer .i {
+      color: white;
+      font-size: 10px; } }
+
+/*# sourceMappingURL=style.css.map */
